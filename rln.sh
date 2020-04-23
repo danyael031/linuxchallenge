@@ -58,13 +58,9 @@ echo "Sorting and filtering"
 sort ./output | grep -iv ^a > output_sort_grep 
 
 # Compare lines
-linesorigin=$( wc -l ./output )
-linesfiltered=$( wc -l ./output_sort_grep )
+linesorigin=$( wc -l ./output | cut -d' ' -f1 )
+linesfiltered=$( wc -l ./output_sort_grep | cut -d' ' -f1 )
 difflines=$(( $linesorigin - $linesfiltered   ))
 
 echo "Removed lines: $difflines"
-
-# 
-
-
 
