@@ -22,7 +22,7 @@ echo "${strln:0:15}\n"
 # $ size=$(du -b ./output | cut -f1 )
 # or ls:
 # $ size=$(ls -l ./output | cut -d ' ' -f5 )
-# But we dont need to verify the size of the file each line.
+# But we dont need to verify the size of the file in each line.
 #
 # If we have an static number of characters per line, 15, plus the Line Feed
 # character, 16, we can simply calculate the number of lines we need to reach 
@@ -49,9 +49,9 @@ echo "File done"
 echo "Sorting and filtering"
 
 # In this case, I don't have specific preference of sorting type. Default
-# sort is enough to get a good view of alphanumeric random elements cause
-# can get numeric and alphabetical order.
-# if we take another option, like dictionary, doesn't get different output
+# sort is enough to get a good view of alphanumeric random elements because
+# it can get numeric and alphabetical order.
+# if we take another option, like dictionary, it doesn't get a different output
 # because there is only alphanumerics, and general numeric sort seems
 # messy.
 
